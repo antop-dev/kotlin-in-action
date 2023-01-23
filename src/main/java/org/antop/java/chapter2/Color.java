@@ -20,7 +20,7 @@ public enum Color {
         this.b = b;
     }
 
-    private int rgb() {
+    public int rgb() {
         return (r * 256 + g) * 256 + b;
     }
 
