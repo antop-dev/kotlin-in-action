@@ -1,4 +1,4 @@
-package org.antop.java.chapter4
+package org.antop.kotlin.chapter4
 
 class CountingSet<T>(
     private val innerSet: MutableCollection<T> = mutableSetOf()

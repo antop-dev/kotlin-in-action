@@ -1,4 +1,4 @@
-package org.antop.java.chapter4
+package org.antop.kotlin.chapter4
 
 class DelegatingSet<T> : MutableCollection<T> {
     private val innerSet = mutableSetOf<T>()
