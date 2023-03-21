@@ -16,6 +16,8 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.springframework:spring-core:6.0.4")
     implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.google.code.findbugs:jsr305:3.0.2")
+    implementation("javax.persistence:javax.persistence-api:2.2")
     testImplementation(kotlin("test"))
 }
 
