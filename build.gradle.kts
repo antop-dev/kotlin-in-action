@@ -10,14 +10,19 @@ version = "1.0.0"
 
 repositories {
     mavenCentral()
+    flatDir {
+        dir("libs")
+    }
 }
 
 dependencies {
+    implementation(fileTree("libs"))
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.springframework:spring-core:6.0.4")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.google.code.findbugs:jsr305:3.0.2")
     implementation("javax.persistence:javax.persistence-api:2.2")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
     testImplementation(kotlin("test"))
 }
 
@@ -27,8 +32,4 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
-}
-
-application {
-    mainClass.set("MainKt")
 }
