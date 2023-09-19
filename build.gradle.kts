@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.9.10"
     application
 }
 
@@ -22,7 +22,8 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.google.code.findbugs:jsr305:3.0.2")
     implementation("javax.persistence:javax.persistence-api:2.2")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.10")
+    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.9.1")
     testImplementation(kotlin("test"))
 }
 
